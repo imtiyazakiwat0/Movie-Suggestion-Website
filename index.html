@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page | SOCIAL-SUGGETION</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    
+
+    <!-- Add these script tags before your home.js script tag -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <!-- Add this before your home.js script tag -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js"></script>
+
+    <!-- Add this line to include Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js" type="module"></script>
+
+    <script src="firebase-config.js"></script>
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="messeging.html">Messaging</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+    <div class="container my-custom-container custom-styling">
+        <h1>Welcome to the SOCIAL-SUGGETION APP</h1>
+        <div id="uploadForm" class="my-custom-form custom-styling">
+            <input type="file" id="fileInput" accept="image/*, video/*">
+            <textarea id="textContent" placeholder="Enter text content"></textarea>
+            <button id="submitBtn" onclick="uploadContent()" class="btn btn-primary">Upload</button>
+        </div>
+        <div id="suggestionsList" class="my-custom-suggestions custom-styling">
+            <!-- Suggestions from other users will be dynamically added here -->
+        </div>
+    </div>
+</div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js" type="module"></script>
+  <script src="firebase-config.js" type="module"></script>
+  <script src="home.js" type="module"></script> -->
+
+</body>
+
+</html>

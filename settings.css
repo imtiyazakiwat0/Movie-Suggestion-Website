@@ -1,0 +1,20 @@
+.profile-picture-label {
+    cursor: pointer;
+  }
+  
+  .change-profile-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+  }
+  
+  .profile-picture-label:hover .change-profile-picture {
+    display: block;
+  }
+  

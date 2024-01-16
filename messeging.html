@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messaging Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="messeging.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+    <!-- Add these script tags before your home.js script tag -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="messaging.js"></script>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <!-- Search Bar -->
+    <div class="form-group">
+      <input type="text" class="form-control" id="searchInput" placeholder="Search by name or username">
+      <button class="btn btn-primary mt-2" id="searchBtn">Search</button>
+    </div>
+
+    <!-- User List -->
+    <ul class="list-group" id="userList"></ul>
+
+    <!-- Chat Area -->
+    <div id="chatArea" style="display: none;">
+      <h3 id="chatUsername"></h3>
+      <div id="chatMessages"></div>
+      <div class="form-group mt-2">
+        <textarea class="form-control" id="messageInput" rows="3" placeholder="Type your message..."></textarea>
+        <button class="btn btn-primary mt-2" id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

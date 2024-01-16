@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="settings.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="settings.js"></script>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+      <a class="navbar-brand" href="index.html">Movie Suggestion</a>
+      <button id="backBtn" class="btn btn-primary">Back</button>
+      <button id="logoutBtn" class="btn btn-danger">Logout</button>
+    </nav>
+
+    <div class="row mt-4">
+      <div class="col-lg-3">
+        <div class="text-center">
+          <label for="profilePictureInput" class="profile-picture-label">
+            <img id="profilePicture" src="/img/default-profile.jpg" class="rounded-circle profile-picture"
+              alt="Profile Picture">
+            <div class="change-profile-picture">Change</div>
+          </label>
+          <input type="file" id="profilePictureInput" class="d-none">
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="form-group">
+          <label for="displayNameInput">Display Name</label>
+          <input type="text" class="form-control" id="displayNameInput">
+        </div>
+        <div class="form-group">
+          <label for="lastSeenInput">Last Seen Options</label>
+          <select class="form-control" id="lastSeenInput">
+            <option value="everyone">Everyone</option>
+            <option value="contacts">Contacts</option>
+            <option value="nobody">Nobody</option>
+          </select>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="onlineStatusInput">
+          <label class="form-check-label" for="onlineStatusInput">Show Online Status</label>
+        </div>
+        <button id="saveSettingsBtn" class="btn btn-primary mt-3">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
